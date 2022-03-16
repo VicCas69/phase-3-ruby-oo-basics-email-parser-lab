@@ -13,7 +13,7 @@ class EmailAddressParser
 
     def parse
         u_emails = 
-        if @emails.match(",")
+        if @emails.include?(",")
             @emails.split(/,* /)            
         elsif
            u_emails =  @emails.split(" ")
